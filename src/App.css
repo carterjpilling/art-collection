@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.art-posts > img {
+  height: 250px;
+  /* width: 100%; */
+  /* height: ; */
+  margin-bottom: 10px;
+  border: 20px groove rgba(144, 110, 23, 0.753);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.art-posts{
+  border: 2px solid black;
+  width: 250px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  /* box-sizing: inherit; */
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  color: rgb(185, 185, 185);
+  
+}
+/* .Header{
+  background-image: url("http://rlv.zcache.com/fleur_de_lis_gold_leaf_cutout-r1e4e5b19bc0949f99e5d24aab8f2eacd_x7saw_8byvr_512.jpg");
+  width: 100%;
+  height: 7vh;
+  background-size: 25px;
+} */
+.DisplayCollection{
+  background-image: url("https://wallpapercave.com/wp/1y38L0L.jpg");
+  height: 200vh;
+  width: 100vw;
+  background-position: center;
+  display: flex;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+.art-form{
+  /* display: none; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
