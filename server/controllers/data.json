@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sisters (On the Terrace)",
+    "artist": "Pierre-Auguste Renoir",
+    "year": "1881",
+    "artImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Renoir%2C_Pierre-Auguste_-_The_Two_Sisters%2C_On_the_Terrace.jpg/250px-Renoir%2C_Pierre-Auguste_-_The_Two_Sisters%2C_On_the_Terrace.jpg",
+    "comments": " ",
+    "artDescription": "The title Two Sisters (French: Les Deux Sœurs) was given to the painting by Renoir, and the title On the Terrace (French: Sur la terrasse) by its first owner Paul Durand-Ruel. Renoir worked on the painting on the terrace of the Maison Fournaise, a restaurant located on an island in the Seine in Chatou, the western suburb of Paris. The painting depicts a young woman and her younger sister seated outdoors with a small basket containing balls of wool. Over the railings of the terrace one can see shrubbery and foliage with the River Seine behind it."
+  },
+  {
+    "id": 2,
+    "title": "The Storm on the Sea of Galilee",
+    "artist": "Rembrandt van Rijn",
+    "year": "1633",
+    "artImg": "https://farm7.staticflickr.com/6178/6175419524_69ebc9e81b_o_d.jpg",
+    "comments": " ",
+    "artDescription": "The Storm on the Sea of Galilee is a 1633 oil-on-canvas painting by the Dutch Golden Age painter Rembrandt van Rijn. It was previously in the Isabella Stewart Gardner Museum in Boston but was stolen in 1990 and remains missing. The painting depicts the miracle of Jesus calming the storm on the Sea of Galilee, specifically as it is described in the fourth chapter of the Gospel of Mark.It is Rembrandt's only seascape."
+  },
+  {
+    "id": 3,
+    "title": "At the Moulin Rouge",
+    "artist": "Henri de Toulouse-Lautrec",
+    "year": "Between 1892 and 1895",
+    "artImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Henri_de_Toulouse-Lautrec_-_At_the_Moulin_Rouge_-_Google_Art_Project.jpg/1200px-Henri_de_Toulouse-Lautrec_-_At_the_Moulin_Rouge_-_Google_Art_Project.jpg",
+    "comments": " ",
+    "artDescription": "At the Moulin Rouge (French: Au Moulin Rouge) is an oil-on-canvas painting by French artist Henri de Toulouse-Lautrec. It was painted between 1892 and 1895. It is one of a number of works by Toulouse-Lautrec depicting the Moulin Rouge cabaret built in Paris in 1889; the others include At the Moulin Rouge, The Dance, and the poster Moulin Rouge: La Goulue. Included in the background is a self-portrait of the artist."
+  },
+  {
+    "id": 4,
+    "title": "The Fighting Temeraire, tugged to her last berth to be broken up, 1838",
+    "artist": "J. M. William Turner",
+    "year": "1838",
+    "artImg": "https://freedfromtime.files.wordpress.com/2016/04/the-fighting-temeraire-by-joseph-mallord-william-turner-at-the-national-gallery1.jpg",
+    "comments": " ",
+    "artDescription": "The Fighting Temeraire, tugged to her last berth to be broken up, 1838 is an oil painting by the English artist Joseph Mallord William Turner, painted in 1838 and exhibited at the Royal Academy in 1839. The painting depicts the 98-gun HMS Temeraire, one of the last second-rate ships of the line to have played a role in the Battle of Trafalgar, being towed up the Thames by a paddle-wheel steam tug in 1838, towards its final berth in Rotherhithe to be broken up for scrap."
+  },
+  {
+    "id": 5,
+    "title": "The Thinker",
+    "artist": "Auguste Rodin",
+    "year": "1904",
+    "artImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Le_Penseur_in_the_Jardin_du_Mus%C3%A9e_Rodin%2C_Paris_14_June_2015.jpg/1200px-Le_Penseur_in_the_Jardin_du_Mus%C3%A9e_Rodin%2C_Paris_14_June_2015.jpg",
+    "comments": " ",
+    "artDescription": "The Thinker (French: Le Penseur) is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows a nude male figure of heroic size sitting on a rock with his chin resting on one hand as though deep in thought, often used as an image to represent philosophy. Rodin first conceived the figure as part of his work The Gates of Hell commissioned in 1880, but the first of the familiar monumental bronze castings did not appear until 1904."
+  },
+  {
+    "id": 6,
+    "title": "The Green Line",
+    "artist": "Henri Matisse",
+    "year": "1905",
+    "artImg": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Matisse_-_Green_Line.jpeg/300px-Matisse_-_Green_Line.jpeg",
+    "comments": " ",
+    "artDescription": "The Green Stripe (La Raie Verte), also known as Portrait of Madame Matisse. The Green Line, is a portrait by Henri Matisse of his wife, Amélie Noellie Matisse-Parayre. It is an oil painting on canvas, completed autumn or winter 1905. It is named for the green band that divides the face in half, by which Matisse sought to produce a sense of light, shadow, and volume without using traditional shading. Matisse's colorism was shocking at the time."
+  },
+  {
+    "id": 7,
+    "title": "Impression, soleil levant",
+    "artist": "Claude Monet",
+    "year": "1872",
+    "artImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/400px-Monet_-_Impression%2C_Sunrise.jpg",
+    "comments": " ",
+    "artDescription": "Impression, Sunrise (French: Impression, soleil levant) is a painting by Claude Monet first shown at what would become known as the Exhibition of the Impressionists in Paris in April, 1874. The painting is credited with inspiring the name of the Impressionist movement. Impression, Sunrise depicts the port of Le Havre, Monet's hometown. It is now displayed at the Musée Marmottan Monet in Paris."
+  }
+]
