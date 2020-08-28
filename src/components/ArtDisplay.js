@@ -31,6 +31,7 @@ class ArtDisplay extends Component {
         artCollection: res.data
       })
     })
+
   }
 
   addComment(id, comments) {

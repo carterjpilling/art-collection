@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { render } from '@testing-library/react'
 
-const CommentForm = (props) => {
+class CommentForm extends Component {
+  constructor() {
+    super()
 
-  handleCommentChange = (e) => { }
+    this.state = {
+      text: " "
+    }
+  }
 
-  handleSubmit = (e) => { }
 
-
-  return (
-    <div>
-
-    </div >
-  )
+  render() {
+    return (
+      <div></div>
+    )
+  }
 }
+
 
 export default CommentForm

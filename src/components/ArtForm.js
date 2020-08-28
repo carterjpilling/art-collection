@@ -25,6 +25,14 @@ class ArtForm extends Component {
     e.preventDefault()
     const { title, artist, year, artImg, artDescription } = this.state
     this.props.addArt(title, artist, year, artImg, artDescription)
+    this.setState({
+      title: "",
+      artist: "",
+      year: "",
+      artImg: "",
+      comments: "",
+      artDescription: "",
+    })
   }
 
 
@@ -32,11 +40,11 @@ class ArtForm extends Component {
     return (
       <div>
         <form onSubmit={e => this.handleSubmit(e)} className="art-form">
-          <input placeholder="Title" onChange={this.handleChange} name="title" />
-          <input placeholder="Artist" onChange={this.handleChange} name="artist" />
-          <input placeholder="Year Made" onChange={this.handleChange} name="year" />
-          <input placeholder="Art Image URL " onChange={this.handleChange} name="artImg" />
-          <input placeholder="Give description of Art Here" onChange={this.handleChange} name="artDescription" />
+          <input placeholder="Title" onChange={this.handleChange} name="title" value={this.state.title} />
+          <input placeholder="Artist" onChange={this.handleChange} name="artist" value={this.state.artist} />
+          <input placeholder="Year Made" onChange={this.handleChange} name="year" value={this.state.year} />
+          <input placeholder="Art Image URL " onChange={this.handleChange} name="artImg" value={this.state.artImg} />
+          <input placeholder="Give description of Art Here" onChange={this.handleChange} name="artDescription" value={this.state.artDescription} />
 
           <button type='submit'>Submit Art to the Collection</button>
         </form>
