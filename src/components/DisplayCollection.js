@@ -14,7 +14,7 @@ const DisplayCollection = (props) => {
       return <CommentForm
         key={element.id}
         data={element}
-        addComent={props.addComent}
+        addComment={props.addComent}
       />
     })}
     {/* DisplayCollection.js */}

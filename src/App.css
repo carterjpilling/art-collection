@@ -1,23 +1,42 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DisplayCollection{
+/* background-image: url("https://wallpapercave.com/wp/1y38L0L.jpg"); */
+background-color: rgba(194, 109, 109, 0.582);
+background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
+height: 100%;
+width: 100%;
+background-position: center;
+display: flex;
+align-items: flex-start;
+/* padding: 50px; */        
+}
+
 .art-posts > img {
   max-width: 80%;
-  margin-bottom: 10px;
-  border: 20px groove rgba(144, 110, 23, 0.753);
+  border: 20px groove rgba(165, 126, 28, 0.952);
 }
 
 .art-posts{
-  /* border: 2px solid black; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 350px;
-  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  /* justify-content: space-evenly; */
-  color: rgb(185, 185, 185);
-  margin: 100px;
-  
+  color: rgb(0, 0, 0);
+  margin-left: 50px;
+  margin-top: 100px;
+
 }
+.art-posts > img{
+  box-shadow: 20px -15px 4px 5px rgba(0,0,0,0.8)
+}
+
 .art-titles{
   font-style: italic;
   font-size: 17px;
@@ -29,50 +48,93 @@
 }
 .Header{
   position: absolute;
-  display: flex;
-  justify-content: center;
   top: 0;
-  height: 8vh;
-  width: 100%;
   padding: 10px;
 }
-.DisplayCollection{
-  background-image: url("https://wallpapercave.com/wp/1y38L0L.jpg");
-  height: 200vh;
-  width: 100%;
-  background-position: center;
+
+.submit-art-button{
   display: flex;
-  align-items: flex-start;
-  padding: 50px;
-  
+  position: absolute;
+  top: 25px;
+  right:25px;
+
+  padding: 10px;
+  border: 4px groove rgb(179, 148, 69);
+  background-color: rgba(148, 148, 148, 0.082);
+  font-family: sans-serif;
+  outline: none;
 }
 
-.navbar{
-  display: flex;
+.artHidden{
+  display:none
+}
+
+.artDropdown{
   position: fixed;
-  top: 0;
-  right: 0;
-  padding: 10px;
+  top: 5%;
+  right: 2.5%;
+  width: 250px;
+  height: 35%;
+  background-color: rgba(173, 173, 173, 0.657);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: sans-serif;
+  padding: 4px;
+  box-sizing: border-box;
+  contain: strict;
+  border: 7px groove rgb(179, 148, 69);
+  padding-top:10px;
+}
+.art-form{
+max-width: 100%;
+width: 220px;
+margin-right: 10px;
 }
 
-.navbar button {
-  /* color: white; */
-  border: none;
+button:hover{
+  cursor: pointer;
+  color: rgb(144, 110, 23);
+}
+
+.art-form > input{
+  margin-top: 5px;
+  max-width: 100%;
+  width: 100%;
+  height: 25px;
+  border: 2px groove rgba(144, 110, 23, 0.753);
+  color: rgba(144, 110, 23);
+  font-weight: 400;
+  }
+
+.art-form > button{
+  margin-top: 10px;
+  margin-left: 26.24px;
+  border: 3px groove rgba(144, 110, 23, 0.753);
+  background: rgba(214, 128, 128, 0.582);
+
+}
+
+.close-button{
+  margin-left: 187px;
+  margin-bottom:7px;
   background-color: transparent;
   font-family: sans-serif;
-  /* font-size: 18px; */
-  /* color: rgb(102, 102, 102); */
-  /* font-weight: 550; */
-  /* line-height: 24px; */
-  outline: none;
-  /* margin-left: 30px; */
+  /* outline: none; */
+  border:1px solid black;
+  padding: 1px;
+  padding-right: 2px;
+  border-radius: 2px;
 }
 
-.art-form{
-  /* display: none; */
+.input-description{
+  height: 50px;
+   width: 5px;
 }
 
-.art-posts p{
-  margin-bottom: 5px;
+.submit-art-button:hover{
+  cursor: pointer;
+  color: rgb(144, 110, 23);
 }
+
 

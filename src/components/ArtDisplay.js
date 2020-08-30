@@ -16,7 +16,7 @@ class ArtDisplay extends Component {
   }
   componentDidMount() {
     axios.get('/api/artData').then(res => {
-      axios.get('/api/commentsData',).then(commentRes => {
+      axios.get('/api/commentData',).then(commentRes => {
         this.setState({
           artCollection: res.data,
           comments: commentRes.data
@@ -53,7 +53,8 @@ class ArtDisplay extends Component {
           addComment={this.addComment}
         />
         <ArtForm
-          addArt={this.addArt} />
+          addArt={this.addArt}
+        />
       </div>
     )
   }
