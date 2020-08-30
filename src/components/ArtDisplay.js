@@ -3,6 +3,7 @@ import ArtForm from './ArtForm'
 //this is the mapping guy vv
 import DisplayCollection from './DisplayCollection'
 import axios from 'axios'
+import MessageBoard from './MessageBoard'
 
 class ArtDisplay extends Component {
   constructor() {
@@ -35,7 +36,7 @@ class ArtDisplay extends Component {
   }
 
   addComment(id, comments) {
-    axios.post(`/api/commentsData?id=${id}`, { comments }).then(res => {
+    axios.post(`/api/commentData?id=${id}`, { comments }).then(res => {
       this.setState({
         comments: res.data
       })
@@ -49,12 +50,14 @@ class ArtDisplay extends Component {
       <div>
         <DisplayCollection
           artCollection={this.state.artCollection}
-          comments={this.state.comments}
+
           addComment={this.addComment}
         />
         <ArtForm
           addArt={this.addArt}
         />
+        <MessageBoard
+          comments={this.state.comments} />
       </div>
     )
   }
