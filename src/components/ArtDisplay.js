@@ -17,6 +17,7 @@ class ArtDisplay extends Component {
     this.addComments = this.addComments.bind(this)
     this.deleteComment = this.deleteComment.bind(this)
     this.editComment = this.editComment.bind(this)
+    this.editArt = this.editArt.bind(this)
   }
   componentDidMount() {
     axios.get('/api/artData').then(res => {
@@ -36,6 +37,13 @@ class ArtDisplay extends Component {
       })
     })
 
+  }
+  editArt(id, title, artist, year, artImg, artDescription) {
+    axios.put(`/api/artData/${id}`, { title, artist, year, artImg, artDescription }).then(res => {
+      this.setState({
+        artCollection: res.data
+      })
+    })
   }
 
   addComments(name, comments) {
@@ -66,8 +74,8 @@ class ArtDisplay extends Component {
       <div>
         <DisplayCollection
           artCollection={this.state.artCollection}
+          editArt={this.editArt}
 
-          addComment={this.addComment}
         />
         <ArtForm
           addArt={this.addArt}

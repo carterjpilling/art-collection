@@ -31,19 +31,21 @@ class CommentForm extends Component {
     return (
       <div className="commentform-container">
 
-        <form onSubmit={e => { this.handleSubmit(e) }}>
+        <form className="form-comment-container" onSubmit={e => { this.handleSubmit(e) }}>
           <input
             placeholder="Name"
             onChange={this.handleChange}
             name="name"
-            value={this.state.name} />
+            value={this.state.name}
+            className="name-input" />
 
           <input
             placeholder="Type Comments Here!"
             onChange={this.handleChange}
             name="comments"
-            value={this.state.comments} />
-          <button type='submit'>Add Comments</button>
+            value={this.state.comments}
+            className="comment-input" />
+          <button className="submit-comment-button" type='submit'>Add Comments</button>
         </form>
 
       </div>

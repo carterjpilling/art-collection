@@ -23,7 +23,9 @@ justify-content: center;
   box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.34);
   margin-bottom: 10px;
 }
-
+.post-year{
+  font-size: 14px;
+}
 .art-posts{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 350px;
@@ -35,13 +37,59 @@ justify-content: center;
   margin-left: 70px;
   margin-right: 35px;
   margin-top: 100px;
+  font-variant: small-caps;
 
 }
+.art-details-container > p{
+  margin: 2px;
+}
+.art-details-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display:none; */
+}
+.edit-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  diplay:none;
+  border: 1px solid black;
+  width: 50%;
+  background-color: rgba(173, 173, 173, 0.657);
 
+}
+.edit-form > button{
+  margin:3px;
+  border: 3px groove rgba(144, 110, 23, 0.753);
+  background: rgba(214, 128, 128, 0.246);
+}
 
+.hide-edit-form{
+  display:none;
+}
+.close-edit-button{
+  background-color: transparent;
+  font-family: sans-serif;
+  /* outline: none; */
+  border:none;
+  padding: 1px;
+  padding-right: 2px;
+  border-radius: 2px;
+  outline: none;
+}
+.hide-close-edit-button{
+  display:none;
+}
+
+.hide-post-details{
+  display:none;
+}
 .art-titles{
   font-style: italic;
   font-size: 17px;
+  font-variant: small-caps;
 }
 
 .DisplayCollection{
@@ -52,6 +100,13 @@ justify-content: center;
   position: absolute;
   top: 0;
   padding: 10px;
+  /* border:1px solid; */
+}
+.header-title{
+  font-style: initial;
+  font-family: cursive;
+  font-size: 50px;
+  color: rgb(179, 148, 69);
 }
 
 .submit-art-button{
@@ -76,7 +131,7 @@ justify-content: center;
   top: 5%;
   right: 1%;
   width: 250px;
-  height: 35%;
+  height: 30%;
   background-color: rgba(173, 173, 173, 0.657);
   display: flex;
   flex-direction: column;
@@ -95,6 +150,9 @@ width: 220px;
 margin-right: 10px;
 }
 
+button{
+  outline:none;
+}
 button:hover{
   cursor: pointer;
   color: rgb(144, 110, 23);
@@ -128,6 +186,7 @@ button:hover{
   padding: 1px;
   padding-right: 2px;
   border-radius: 2px;
+  outline:none;
 }
 
 .input-description{
@@ -175,7 +234,56 @@ button:hover{
 .commentform-container{
   position: absolute;
   bottom: 0px;
+  display: flex;
+  width: 280px;
+  border: none;
   
+}
+.form-comment-container{
+  border: none;
+
+  display: flex;
+  height: 0%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding:5px;
+  font-family: monospace;
+}
+
+.name-input{
+  width: 20%;
+  margin:2px;
+  font-family: monospace;
+  border: 2px groove rgba(144, 110, 23, 0.753);
+  color: rgba(144, 110, 23);
+  font-weight: 400;
+}
+.comment-input{
+  width: 80%;
+  margin:2px;
+  font-family: monospace;
+  border: 2px groove rgba(144, 110, 23, 0.753);
+  color: rgba(144, 110, 23);
+  font-weight: 400;
+ /* height: 20px; */
+
+}
+
+.edit-form > input{
+  border: 2px groove rgba(144, 110, 23, 0.753);
+  color: rgba(144, 110, 23);
+  margin: 2px;
+}
+.submit-comment-button{
+  position: relative;
+  right:0px;
+  margin:2px;
+  font-family: monospace;
+  border: 3px groove rgba(144, 110, 23, 0.753);
+  background: rgba(214, 128, 128, 0.582);
+  outline:none;
 }
 
 .commentor-comments{
@@ -219,12 +327,14 @@ button:hover{
   align-content: center;
 
   /* padding: 1px; */
-  /* margin-right: 2px; */
-  position: absolute;
-  right: 35px;
+
+  /* position: absolute; */
+  /* right: 35px; */
 }
 
-
+.hide-edit-button{
+  display: none;
+}
 
 .comments-hidden{
   display:none;
@@ -242,7 +352,22 @@ button:hover{
   font-family: sans-serif;
   outline: none;
 }
+.edit-container{
+  display: flex;
+}
+.edit-button{
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  font-family: sans-serif;
+  outline: none;
+  display: flex;
+  position: relative;
+  margin-top:3px;
+  font-size: 12px;
+  /* right: -130px;  */
 
+}
 .close-messages{
   background-color: transparent;
   font-family: sans-serif;

@@ -31,16 +31,18 @@ module.exports = {
       return res.status(404).send('Post not found')
     }
 
-    const existingPost = artData[index]
+    let existingPost = artData[index]
+    // console.log(existingPost)
     const modifiedArtPost = {
       id: existingPost.id,
       title: title || existingPost.title,
       artist: artist || existingPost.artist,
       year: year || existingPost.year,
-      artImg: existingPost.artImg,
+      artImg: artImg || existingPost.artImg,
       comments: existingPost.comments,
       artDescription: existingPost.artDescription
     }
+    console.log(modifiedArtPost)
     artData[index] = modifiedArtPost
 
     res.status(200).send(artData)

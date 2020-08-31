@@ -7,6 +7,7 @@ const DisplayCollection = (props) => {
       return <ArtPost
         key={element.id}
         data={element}
+        editArt={props.editArt}
       />
     })}
   </div>

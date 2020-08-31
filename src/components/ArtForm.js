@@ -58,7 +58,7 @@ class ArtForm extends Component {
               <input placeholder="Artist" onChange={this.handleChange} name="artist" value={this.state.artist} />
               <input placeholder="Year Made" onChange={this.handleChange} name="year" value={this.state.year} />
               <input placeholder="Art Image URL " onChange={this.handleChange} name="artImg" value={this.state.artImg} />
-              <input placeholder="Give description of Art Here" onChange={this.handleChange} className="input-description" name="artDescription" value={this.state.artDescription} />
+              {/* <input placeholder="Give description of Art Here" onChange={this.handleChange} className="input-description" name="artDescription" value={this.state.artDescription} /> */}
               <button type='submit'  >Submit Art to the Collection</button>
             </form>
           </div>

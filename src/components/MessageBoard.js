@@ -19,7 +19,7 @@ class MessageBoard extends Component {
   render() {
 
 
-    console.log(this.state.display)
+    // console.log(this.state.display)
     return (
       < div className={this.state.display ? 'hide-message-button' : "message-board-controller"} >
         <button
