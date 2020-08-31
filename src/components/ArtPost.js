@@ -46,7 +46,7 @@ class ArtPost extends Component {
   render() {
     console.log(this.state.display)
 
-    const { title, artist, year, artImg, artDescription } = this.props.data
+    const { title, artist, year, artImg } = this.props.data
     return (
       <div className="art-posts">
         <img src={artImg} alt={this.props.data.title} />

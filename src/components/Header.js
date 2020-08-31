@@ -5,9 +5,9 @@ import React from 'react'
 function Header() {
   return (
     <div className="Header">
-      <p className="header-title">
+      <h1 className="header-title">
         The Art Collection of Port 4044
-        </p>
+        </h1>
     </div>
   )
 }

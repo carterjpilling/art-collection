@@ -42,7 +42,7 @@ module.exports = {
       comments: existingPost.comments,
       artDescription: existingPost.artDescription
     }
-    console.log(modifiedArtPost)
+    // console.log(modifiedArtPost)
     artData[index] = modifiedArtPost
 
     res.status(200).send(artData)

@@ -365,12 +365,14 @@ button:hover{
   position: relative;
   margin-top:3px;
   font-size: 12px;
+  font-variant: small-caps;
   /* right: -130px;  */
 
 }
 .close-messages{
   background-color: transparent;
   font-family: sans-serif;
+  
   border: none;
   padding: 1px;
   padding-right: 2px;
