@@ -11,6 +11,7 @@ app.use(express.json())
 //* Art Endpoints
 app.get('/api/artData', artCtrl.getAllArt)
 app.post('/api/artData', artCtrl.addArt)
+app.put('/api/artData/:id', artCtrl.editArt)
 
 //* OLD Comment Endpoints
 app.get('/api/commentsData', commentCtrl.getComments)

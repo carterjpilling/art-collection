@@ -46,7 +46,7 @@ class ArtForm extends Component {
   }
 
   render() {
-    console.log(this.state.display)
+    // console.log(this.state.display)
     return (
       <div className="artform-container">
         <button className={this.state.display ? 'hide-submit-button' : 'submit-art-button'} onClick={this.handleArtSlide}>Submit Art</button>

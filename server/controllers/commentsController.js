@@ -11,7 +11,7 @@ module.exports = {
     const { name, comments } = req.body
     const newComment = {
       id: id,
-      name,
+      name: name,
       comments: comments,
     }
     commentData.push(newComment)

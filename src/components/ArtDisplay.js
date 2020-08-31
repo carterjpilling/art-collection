@@ -11,16 +11,19 @@ class ArtDisplay extends Component {
 
     this.state = {
       artCollection: [],
-      comments: []
+      commentsArray: []
     }
     this.addArt = this.addArt.bind(this)
+    this.addComments = this.addComments.bind(this)
+    this.deleteComment = this.deleteComment.bind(this)
+    this.editComment = this.editComment.bind(this)
   }
   componentDidMount() {
     axios.get('/api/artData').then(res => {
       axios.get('/api/commentData',).then(commentRes => {
         this.setState({
           artCollection: res.data,
-          comments: commentRes.data
+          commentsArray: commentRes.data
         })
       })
     })
@@ -35,17 +38,30 @@ class ArtDisplay extends Component {
 
   }
 
-  addComment(id, comments) {
-    axios.post(`/api/commentData?id=${id}`, { comments }).then(res => {
+  addComments(name, comments) {
+    axios.post(`/api/commentData`, { name, comments }).then(res => {
       this.setState({
-        comments: res.data
+        commentsArray: res.data
       })
     })
   }
-  deleteComment() { }
-  editComment() { }
+  deleteComment(id) {
+    axios.delete(`/api/commentData/${id}`,).then(res => {
+      this.setState({
+        commentsArray: res.data,
+      })
+    })
+  }
+  editComment(id, comments) {
+    axios.put(`/api/commentData?${id}`, { comments }).then((res) => {
+      this.setState({
+        commentsArray: res.data,
+      })
+    })
+  }
 
   render() {
+    console.log(this.commentsArray)
     return (
       <div>
         <DisplayCollection
@@ -57,7 +73,11 @@ class ArtDisplay extends Component {
           addArt={this.addArt}
         />
         <MessageBoard
-          comments={this.state.comments} />
+          deleteComment={this.deleteComment}
+          commentsArray={this.state.commentsArray}
+          addComments={this.addComments}
+          editComment={this.editComment} />
+        <div>{this.commentsArray}</div>
       </div>
     )
   }

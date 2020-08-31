@@ -1,6 +1,5 @@
 import React from 'react'
 import ArtPost from './ArtPost'
-import MessageBoard from './MessageBoard'
 
 const DisplayCollection = (props) => {
   return <div className="DisplayCollection">
@@ -10,13 +9,6 @@ const DisplayCollection = (props) => {
         data={element}
       />
     })}
-    {/* {props.comments.map(element => {
-      return <MessageBoard
-        key={element.id}
-        data={element}
-      />
-    })} */}
-    {/* DisplayCollection.js */}
   </div>
 }
 

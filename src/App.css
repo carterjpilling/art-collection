@@ -5,20 +5,23 @@
 }
 .DisplayCollection{
 /* background-image: url("https://wallpapercave.com/wp/1y38L0L.jpg"); */
-background-color: rgba(194, 109, 109, 0.582);
-background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+background-color: rgb(2, 70, 61);
+/* background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
 background-size: 50px 50px;
 height: 100%;
-width: 100%;
+width: 100%; */
 background-position: center;
 display: flex;
-align-items: flex-start;
+align-items: center;
+justify-content: center;
 /* padding: 50px; */        
 }
 
 .art-posts > img {
   max-width: 80%;
   border: 20px groove rgba(165, 126, 28, 0.952);
+  box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.34);
+  margin-bottom: 10px;
 }
 
 .art-posts{
@@ -29,13 +32,12 @@ align-items: flex-start;
   align-items: center;
   padding: 20px;
   color: rgb(0, 0, 0);
-  margin-left: 50px;
+  margin-left: 70px;
+  margin-right: 35px;
   margin-top: 100px;
 
 }
-.art-posts > img{
-  box-shadow: 20px -15px 4px 5px rgba(0,0,0,0.8)
-}
+
 
 .art-titles{
   font-style: italic;
@@ -72,7 +74,7 @@ align-items: flex-start;
 .artDropdown{
   position: fixed;
   top: 5%;
-  right: 2.5%;
+  right: 1%;
   width: 250px;
   height: 35%;
   background-color: rgba(173, 173, 173, 0.657);
@@ -86,6 +88,7 @@ align-items: flex-start;
   border: 7px groove rgb(179, 148, 69);
   padding-top:10px;
 }
+
 .art-form{
 max-width: 100%;
 width: 220px;
@@ -121,7 +124,7 @@ button:hover{
   background-color: transparent;
   font-family: sans-serif;
   /* outline: none; */
-  border:1px solid black;
+  border:none;
   padding: 1px;
   padding-right: 2px;
   border-radius: 2px;
@@ -137,4 +140,127 @@ button:hover{
   color: rgb(144, 110, 23);
 }
 
+.message-board{
+  position: absolute;
+  top:5%;
+  left:.5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  height: 500px;
+  /* border: 2px solid black; */
+  width: 285px;
+  border: 7px groove rgb(179, 148, 69);
+  background-color: rgba(173, 173, 173, 0.657);
+  padding: 3px;
+  
 
+}
+
+.comments-displayed{
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  flex-direction: column;
+  border: 1px groove rgb(179, 148, 69);
+  margin-bottom: 7px;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.281);
+}
+
+.commentor-name{
+  font-weight: bold;
+  /* margin-bottom: ; */
+}
+.commentform-container{
+  position: absolute;
+  bottom: 0px;
+  
+}
+
+.commentor-comments{
+  margin-bottom: 1px;
+  margin-left: 20px;
+}
+
+.delete-comment{
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 10px;
+  height: 15px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  padding: 1px;
+  margin-right: 2px;
+  position: absolute;
+  right: 5px;
+}
+/* .delete-comment:hover{
+  color: white;
+}
+
+.edit-comment:hover{
+  color: white;
+} */
+
+.edit-comment{
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 10px;
+  height: 15px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  /* padding: 1px; */
+  /* margin-right: 2px; */
+  position: absolute;
+  right: 35px;
+}
+
+
+
+.comments-hidden{
+  display:none;
+}
+
+.open-message-board-button{
+  display: flex;
+  position: absolute;
+  top: 25px;
+  left:25px;
+
+  padding: 10px;
+  border: 4px groove rgb(179, 148, 69);
+  background-color: rgba(148, 148, 148, 0.082);
+  font-family: sans-serif;
+  outline: none;
+}
+
+.close-messages{
+  background-color: transparent;
+  font-family: sans-serif;
+  border: none;
+  padding: 1px;
+  padding-right: 2px;
+  border-radius: 2px;
+  position: relative;
+  left: 240px;
+  margin-bottom: 10px;
+  outline: none;
+  width: 50px;
+}
+
+.close-messages:hover{
+  color:white
+}
+
+.hide-submit-button{
+  display: none;
+}
